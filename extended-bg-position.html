@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>extended-bg-position</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--背景图片做偏移定位-->
+  <style>
+    div {
+      background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+      max-width: 10em;
+      min-height: 5em;
+      padding: 10px;
+      color: white;
+      font: 100%/1 sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .div1 {
+      /*background-position 的扩展语法方案*/
+      background-position: right 20px bottom 10px;
+    }
+
+    .div2 {
+      /*background-origin 方案*/
+      background-origin: content-box;
+    }
+
+    .div3 {
+      /*calc() 方案*/
+      background-position: calc(100% - 20px) calc(100% - 10px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">code pirate</div>
+  <div class="div2">code pirate</div>
+  <div class="div3">code pirate</div>
+</body>
+
+</html>

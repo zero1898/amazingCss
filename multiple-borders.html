@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>multiple-borders</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--多边框-->
+  <style>
+    .div1 {
+      position: relative;
+      width: 100px;
+      height: 60px;
+      margin: 25px;
+      background: yellowgreen;
+      box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, .6);
+    }
+
+    .div2 {
+      position: relative;
+      top: 30px;
+      width: 100px;
+      height: 60px;
+      margin: 25px;
+      background: yellowgreen;
+      box-shadow: 0 0 0 10px #655 inset, 0 0 0 15px deeppink inset, 0 2px 5px 15px rgba(0, 0, 0, .6) inset;
+    }
+
+    .div3 {
+      position: relative;
+      top: 30px;
+      width: 100px;
+      height: 60px;
+      margin: 25px;
+      background: yellowgreen;
+      border: 10px solid #655;
+      outline: 5px solid deeppink;
+    }
+
+    .div4 {
+      position: relative;
+      top: 30px;
+      width: 100px;
+      height: 60px;
+      margin: 25px;
+      background: #655;
+      outline: 2px dashed #fff;
+      outline-offset: -10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1"></div>
+  <div class="div2"></div>
+  <div class="div3"></div>
+  <div class="div4"></div>
+</body>
+
+</html>
