@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>image border</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--图片边框-->
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+    /*图片边框*/
+
+    .imageBorder {
+      border: 1em solid transparent;
+      background: linear-gradient(white, white) padding-box, url(http://csssecrets.io/images/stone-art.jpg) border-box 0 / cover;
+    }
+    /*老式信封*/
+    .letter {
+      border: 1em solid transparent;
+      background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
+    }
+    /*行军蚁*/
+    @keyframes ants {
+      to {
+        background-position: 100% 100%
+      }
+    }
+
+    .ant {
+      border: 1px solid transparent;
+      background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+      animation: ants 12s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="imageBorder"></div>
+  <div class="letter"></div>
+  <div class="ant"></div>
+</body>
+
+</html>

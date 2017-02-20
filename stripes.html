@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--条纹背景-->
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 30px;
+    }
+    /*linear-gradient实现*/
+    .horizontal {
+      background: linear-gradient(#fb3 33%, #58a 0, #58a 66%, #8f9 0);
+      background-size: 100% 40px;
+    }
+
+    .vertical {
+      background: linear-gradient(90deg, #fb3 33%, #58a 0, #58a 66%, #8f9 0);
+      background-size: 40px 100%;
+    }
+
+    .diagonal {
+      background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+      background-size: 30px 30px;
+    }
+    /*repeating-linear-gradient实现*/
+    .repeat_0_deg {
+      background: repeating-linear-gradient(#fb3 0, #fb3 15px, #58a 0, #58a 30px);
+    }
+
+    .repeat_45_deg {
+      background: repeating-linear-gradient(45deg, #fb3 0, #fb3 15px, #58a 0, #58a 30px);
+    }
+
+    .subtle {
+      background: #58a;
+      background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px, transparent 0, transparent 30px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="horizontal"></div>
+  <div class="vertical"></div>
+  <div class="diagonal"></div>
+  <div class="repeat_0_deg"></div>
+  <div class="repeat_45_deg"></div>
+  <div class="subtle"></div>
+</body>
+
+</html>
