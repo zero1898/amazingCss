@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>cicada stripes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--菱形图片-->
+  <style>
+    /*基于变形的方案*/
+
+    .diamond {
+      width: 250px;
+      height: 250px;
+      transform: rotate(45deg);
+      overflow: hidden;
+      margin: 100px;
+    }
+
+    .diamond img {
+      max-width: 100%;
+      transform: rotate(-45deg) scale(1.42);
+      z-index: -1;
+      position: relative;
+    }
+    /*裁切路径方案*/
+
+    .clip {
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      transition: 1s clip-path;
+    }
+
+    .clip:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="diamond">
+    <img src="http://csssecrets.io/images/adamcatlace.jpg">
+  </div>
+  <img class="clip" src="http://csssecrets.io/images/adamcatlace.jpg">
+</body>
+
+</html>

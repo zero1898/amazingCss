@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ellipse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--自适应的椭圆-->
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      background: orange;
+    }
+    /*椭圆*/
+    .ellipse {
+      border-radius: 50%;
+    }
+    /*半椭圆*/
+    .half-ellipse {
+      border-radius: 50% / 100% 100% 0 0 ;
+    }
+    /*四分之一椭圆*/
+    .quarter-ellipse {
+      border-radius: 100% 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ellipse"></div>
+  <div class="half-ellipse"></div>
+  <div class="quarter-ellipse"></div>
+</body>
+
+</html>
